@@ -6,12 +6,11 @@ require 'better_sjr/version'
 Gem::Specification.new do |spec|
   spec.name          = "better_sjr"
   spec.version       = BetterSJR::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["Carlos Ramirez III"]
+  spec.email         = ["carlos.e.ramirez.iii@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Improvements to Rails' built-in Server-side JavaScript Response (SJR) system}
+  spec.homepage      = "https://github.com/carlosramireziii/better_sjr"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
