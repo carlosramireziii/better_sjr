@@ -1,5 +1,5 @@
 require "better_sjr/version"
 
-module BetterSjr
+module BetterSJR
   # Your code goes here...
 end

@@ -5,7 +5,7 @@ require 'better_sjr/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "better_sjr"
-  spec.version       = BetterSjr::VERSION
+  spec.version       = BetterSJR::VERSION
   spec.authors       = ["TODO: Write your name"]
   spec.email         = ["TODO: Write your email address"]
 
