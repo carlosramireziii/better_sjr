@@ -1,7 +1,11 @@
 module BetterSJR
   module RendererExtensions
     def render_template(*)
-      TryCatchStatement.new(super)
+      if debugging_sjr? && rendering_js?
+        TryCatchStatement.new(super).wrapped_code
+      else
+        super
+      end
     end
 
     def debugging_sjr?
