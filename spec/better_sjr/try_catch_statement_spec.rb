@@ -1,14 +1,6 @@
 require "spec_helper"
 
 describe BetterSJR::TryCatchStatement do
-  RSpec::Matchers.define :be_a_try_catch_statement do
-    TRY_CATCH_REGEX = /try\s*{\s*.*\s*}\s*catch.*\s*{\s*.*\s*}/
-
-    match do |code_snippet|
-      code_snippet =~ TRY_CATCH_REGEX
-    end
-  end
-
   describe "#original_code" do
     it "returns the original code passed to the instance" do
       code = "var foo = 'bar';"
