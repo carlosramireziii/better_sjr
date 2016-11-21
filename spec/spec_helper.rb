@@ -2,7 +2,7 @@ $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require "better_sjr"
 
 require "combustion"
-Combustion.path = 'spec/dummy'
+Combustion.path = "spec/dummy"
 Combustion.initialize! :action_controller, :action_view
 
 require "rspec/rails"

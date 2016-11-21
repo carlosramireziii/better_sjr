@@ -11,4 +11,3 @@ RSpec::Matchers.define :be_a_try_catch_statement do
     TryCatchRegex.match?(code_snippet)
   end
 end
-

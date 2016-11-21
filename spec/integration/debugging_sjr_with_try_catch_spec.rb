@@ -31,7 +31,7 @@ describe "Debugging SJR with try-catch" do
 
   def perform_js_request
     if Rails::VERSION::MAJOR < 5
-      # the 'xhr' method of performing an AJAX request is deprecated in Rails 5 or greater
+      # AJAX requests using 'xhr' method are deprecated in Rails 5+
       xhr :post, dummy_app_route
     else
       post dummy_app_route, xhr: true
@@ -42,4 +42,3 @@ describe "Debugging SJR with try-catch" do
     post dummy_app_route
   end
 end
-

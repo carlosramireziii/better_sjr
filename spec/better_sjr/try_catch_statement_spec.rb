@@ -13,7 +13,7 @@ describe BetterSJR::TryCatchStatement do
   describe "#wrapped_code" do
     it "returns original code wrapped in a try-catch statement" do
       original_code = "var foo = 'bar';"
-      try_catch = BetterSJR::TryCatchStatement.new(original_code) 
+      try_catch = BetterSJR::TryCatchStatement.new(original_code)
 
       expect(try_catch.wrapped_code).to be_a_try_catch_statement
     end

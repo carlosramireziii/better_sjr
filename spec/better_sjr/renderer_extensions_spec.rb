@@ -106,8 +106,14 @@ describe BetterSJR::RendererExtensions do
     end
   end
 
-  class DummyRenderer < Struct.new(:template)
+  class DummyRenderer
     prepend BetterSJR::RendererExtensions
+
+    attr_accessor :template
+
+    def initialize(template)
+      @template = template
+    end
 
     def render_template
       template.to_s
