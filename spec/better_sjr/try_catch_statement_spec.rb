@@ -17,5 +17,14 @@ describe BetterSJR::TryCatchStatement do
 
       expect(try_catch.wrapped_code).to be_a_try_catch_statement
     end
+
+    it "prints the error message to the console" do
+      try_catch = BetterSJR::TryCatchStatement.new("")
+
+      expect(try_catch.wrapped_code).to(
+        be_a_try_catch_statement.
+        with_error_handler("console.error(\"Rails SJR error\", e);")
+      )
+    end
   end
 end

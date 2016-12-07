@@ -11,6 +11,7 @@ module BetterSJR
         try {
           #{original_code}
         } catch(e) {
+          console.error("Rails SJR error", e);
         }
       TRYCATCH
     end
