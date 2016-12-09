@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Carlos Ramirez III"]
   spec.email         = ["carlos.e.ramirez.iii@gmail.com"]
 
-  spec.summary       = %q{Improvements to Rails' built-in Server-side JavaScript Response (SJR) system}
+  spec.summary       = %q{Improvements to server-generated JavaScript (SJR) responses in Rails}
   spec.homepage      = "https://github.com/carlosramireziii/better_sjr"
   spec.license       = "MIT"
 
