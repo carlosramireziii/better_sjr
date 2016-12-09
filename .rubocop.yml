@@ -1,0 +1,5 @@
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes

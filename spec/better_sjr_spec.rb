@@ -5,7 +5,6 @@ describe BetterSJR do
     expect(BetterSJR::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
+  it { is_expected.to respond_to(:debug_sjr) }
+  it { is_expected.to respond_to(:debug_sjr=) }
 end
