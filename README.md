@@ -1,5 +1,7 @@
 # BetterSJR
 
+[![Build Status](https://travis-ci.org/carlosramireziii/better_sjr.svg?branch=master)](https://travis-ci.org/carlosramireziii/better_sjr)
+
 BetterSJR improves server-generated JavaScript (SJR) responses in Rails by adding error messages for debugging. 
 
 When enabled, all SJR response templates will be automatically wrapped in a try-catch statement, 
