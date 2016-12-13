@@ -36,15 +36,21 @@ RSpec::Matchers.define :be_a_try_catch_statement do
 
   failure_message do |actual|
     "".tap do |message|
-      message << "expected that: \n\n#{actual}\n would be a try-catch statement"
-      message << " with error handler: \n\n#{error_handler}\n" if error_handler.present?
+      message << "expected that: \n\n#{actual}\n"\
+                 "would be a try-catch statement"
+      if error_handler.present?
+        message << " with error handler: \n\n#{error_handler}\n"
+      end
     end
   end
 
   failure_message_when_negated do |actual|
     "".tap do |message|
-      message << "expected that: \n\n#{actual}\n would not be a try-catch statement"
-      message <<  " with error handler: \n\n#{error_handler}\n" if error_handler.present?
+      message << "expected that: \n\n#{actual}\n"\
+                 "would not be a try-catch statement"
+      if error_handler.present?
+        message << " with error handler: \n\n#{error_handler}\n"
+      end
     end
   end
 
