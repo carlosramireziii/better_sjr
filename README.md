@@ -8,6 +8,8 @@ BetterSJR improves server-generated JavaScript (SJR) responses in Rails by addin
 When enabled, all SJR response templates will be automatically wrapped in a try-catch statement, 
 and the error message of any thrown exception will be printed to the console. 
 
+For more information on common SJR errors, [read this article](http://www.carlosramireziii.com/3-reasons-why-your-sjr-template-isnt-working.html?utm_source=github&utm_campaign=better_sjr).
+
 ## Requirements
 
 ### Ruby and Rails
